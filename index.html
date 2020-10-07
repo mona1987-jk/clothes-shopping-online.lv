@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clothes-shopping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- owl carouse-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!--boostrap-->
+    <!--boostrap-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+<section class="header">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <span class="navbar-text">Shop Logo</span>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+
+                    <input
+                            class="form-control mr-sm-4"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"/>
+                </li>
+                <li class="nav-item">
+
+
+                    <i class="fa fa-search"
+
+                       aria-hidden="true"
+                       style="color: white;"></i>
+                </li>
+                <li class="nav-item">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user"
+                                               aria-hidden="true"
+                                               style="color: white;"></i>
+                </li>
+                <li class="nav-item">
+                    &nbsp;&nbsp;<i class="fa fa-shopping-cart"
+                                   aria-hidden="true"
+                                   style="color: white"></i>
+                </li>
+
+
+
+            </ul>
+        </div>
+        <!-- BOTTOM NAVBAR-->
+
+        <div class="collapse navbar-collapse" id="navbarcenter">
+            <div class="col-lg-12 col-md-12 col-12">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                        >
+                            women
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbardrop"
+                                data-toggle="dropdown-menu"
+                        >
+                            Men
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbardrop"
+                                data-toggle="dropdown"
+
+                        >
+                            Kids
+                        </a>
+
+                        <div class="dropdown-menu"  id="kid"aria-labelledby="dropdownMenuButton">
+                            <div class="row">
+                                <ul class="col-lg-3">
+                                    <li>home1</li>
+                                    <li>home2</li>
+                                    <li>home3</li>
+                                </ul>
+                                <ul class="col-lg-3">
+                                    <li>home1</li>
+                                    <li>home2</li>
+                                    <li>home3</li>
+                                </ul>
+                                <ul class="col-lg-3">
+                                    <li>home1</li>
+                                    <li>home2</li>
+                                    <li>home3</li>
+                                </ul>
+                                <ul class="col-lg-3">
+                                    <li>home1</li>
+                                    <li>home2</li>
+                                    <li>home3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbardrop"
+                                data-toggle="dropdown"
+                        >
+                            Offers
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Women</a>
+                            <a class="dropdown-item" href="#">Men</a>
+                            <a class="dropdown-item" href="#">Kids</a>
+                            <a class="dropdown-item" href="#">Special Sale</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbardrop"
+                                data-toggle="dropdown"
+                        >
+                            Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Home</a>
+                            <a class="dropdown-item" href="#">Categories</a>
+                            <a class="dropdown-item" href="#">Cart</a>
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Blogs</a>
+                            <a class="dropdown-item" href="#">Sigle Blog</a>
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+<!-- END HEADER -->
+
+<!-- slide show-->
+
+<div class="slideshow-container-fluid">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+                src="slide3.jpg"
+                style="width: 100%; height: 100%;"
+                class="imgslides"
+        />
+        <div class="text1" style="color: white;">
+            <span class="title1">Spring Collection</span><br>
+            <span class="title2"  style="color: #6699ff;"><b>New clothes Arrival</b></span><br>
+            <span class="title3" style="color: white;">
+                Lorem,ielit commodi
+                ab at enim id accusim nobis perfumenceelit <br />esse quisium
+                impedit office
+            </span><br>
+            <button type="button" class="btn1">SHOP NOW</button>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+                src="slide1.jpg"
+                style="width: 100%; height: 100%;"
+                class="imgslides"
+        />
+        <div class="text1">
+            <span class="title1">Spring Collection</span><br>
+            <span class="title2" style="color: blue;"><b>New clothes Arrival</b></span><br>
+            <span class="title3">
+                Lorem,ipsum dolor sit amet consectetur adispisicing elit<br />commodi
+                ab at enim id accusim
+            </span><br>
+            <button type="button" class="btn2">SHOP NOW</button>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+                src="slide2.jpg"
+                style="width: 100%; height: 100%;"
+                class="imgslides"
+        />
+        <div class="text1">
+            <span class="title1">Summer Sets</span><br>
+            <span class="title2" style="color: #00cc44;"><b>50% Off</b></span><br>
+            <span class="title3" style="color: black;">
+                Lorem,ipsum dolor sit amet consectetur adispisicing elitid.
+            </span><br>
+            <button type="button" class="btn3">SHOP NOW</button>
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+</div>
+
+
+<br />
+
+<div style="text-align: center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<br />
+
+<!-- New Arrival -->
+<h3 style="text-align: center;">New Arrival</h3>
+<hr width="4%" id="hrline" />
+<p style="text-align: center; color: #737373; font-size: 19px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus metus
+    non ligula tincidunt efficitur.
+</p>
+<br /><br />
+
+<!--  the first  owl-carousel  5 slick slides images-->
+
+<div class="container">
+    <div class="products">
+        <div class="owl-carousel owl-theme">
+
+            <div class="item">
+                <div class="zoom">
+                    <img src="t01_01.jpg" class="img-fluid" />
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Devim</div>
+                    <div class="product-title">LEATHER MOTO JACKET</div>
+                    <div class="new-price">
+                        <strong>$42.50</strong>&nbsp;&nbsp;&nbsp;
+                        <span class="prouct-old-price"><del>$50.00</del></span>
+                    </div>
+                    <button class="btn btn-outline-danger" type="button">
+                        ADD TO CART
+                        &nbsp;<i class="fa fa-shopping-cart"
+                                 aria-hidden="true"
+                    ></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="zoom">
+                    <img src="d01_01.jpg" class="img-fluid" />
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Devim</div>
+                    <div class="product-title">LEATHER MOTO JACKET</div>
+                    <div class="new-price">
+                        <strong>$42.50</strong>&nbsp;&nbsp;&nbsp;
+                        <span class="prouct-old-price"><del>$50.00</del></span>
+                    </div>
+                    <button class="btn btn-outline-danger" type="button">
+                        ADD TO CART
+                        &nbsp;<i class="fa fa-shopping-cart"
+                                 aria-hidden="true"
+                    ></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="zoom">
+                    <img src="b03_01.jpg" class="img-fluid" />
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Devim</div>
+                    <div class="product-title">LEATHER MOTO JACKET</div>
+                    <div class="new-price">
+                        <strong>$42.50</strong>&nbsp;&nbsp;&nbsp;
+                        <span class="prouct-old-price"><del>$50.00</del></span>
+                    </div>
+                    <button class="btn btn-outline-danger" type="button">
+                        ADD TO CART
+                        &nbsp;<i class="fa fa-shopping-cart"
+                                 aria-hidden="true"
+                    ></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="zoom">
+                    <img src="b01_01.jpg" class="img-fluid" />
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Devim</div>
+                    <div class="product-title">LEATHER MOTO JACKET</div>
+                    <div class="new-price">
+                        <strong>$42.50</strong>&nbsp;&nbsp;&nbsp;
+                        <span class="prouct-old-price"><del>$50.00</del></span>
+                    </div>
+                    <button class="btn btn-outline-danger" type="button">
+                        ADD TO CART
+                        &nbsp;<i class="fa fa-shopping-cart"
+                                 aria-hidden="true"
+                    ></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="zoom">
+                    <img src="b02_01.jpg" class="img-fluid" />
+                </div>
+                <div class="product-info">
+                    <div class="product-brand">Devim</div>
+                    <div class="product-title">LEATHER MOTO JACKET</div>
+                    <div class="new-price">
+                        <strong>$42.50</strong>&nbsp;&nbsp;&nbsp;
+                        <span class="prouct-old-price"><del>$50.00</del></span>
+                    </div>
+                    <button class="btn btn-outline-danger" type="button">
+                        ADD TO CART
+                        &nbsp;<i class="fa fa-shopping-cart"
+                                 aria-hidden="true"
+                    ></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<br /><br />
+<!-- first URL background-->
+
+<div class="backgroundURL">
+    <div class="container">
+        <br /><br /><br />
+        <h3 style="text-align: center; color: white;">About Us</h3>
+        <hr width="4%" id="hrline2" />
+        <p style="text-align: center; color: white; font-size: 19px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus
+            metus non ligula tincidunt efficitur.
+        </p>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row align-content-center">
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="text-center text-light border-lg">
+                    <div class="h1"><i class="fas fa-tshirt"></i></div>
+                    <div class="h2"><span class="counter">37</span></div>
+                    <div class="text-inside-border"><span>Esxlusive Brands</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="text-center text-light border-lg">
+                    <div class="h1"><i class="fas fa-store"></i></div>
+                    <div class="h2"><span class="counter">154</span></div>
+                    <div class="text-inside-border"><span>Physical Store</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="text-center text-light border-lg">
+                    <div class="h1"><i class="fas fa-headset"></i></div>
+                    <div class="h2"><span>24/7</span></div>
+                    <div class="text-inside-border"><span>Customer Support</span></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="text-center text-light border-lg">
+                    <div class="h1"><i class="fas fa-gem"></i></div>
+                    <div class="h2"><span class="counter">1156</span></div>
+                    <div class="text-inside-border"><span>Online Products</span></div>
+                </div>
+
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- the second owl-carousel  Latest News and second slid section -->
+<br /><br />
+<div>
+    <h3 style="text-align: center;" id="latest">Latest News</h3>
+    <hr width="4%" id="hrline" />
+    <p style="text-align: center; color: #737373; font-size: 14px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam
+        ullam animi <br />
+        praesentium, voluptatibus consequatur illum consequuntur, sed, officia
+        aliquam! Est?
+    </p>
+</div>
+<br /><br />
+<!-- Latest news second slicky slides images-->
+<div class="container">
+    <div class="responsive">
+        <div class="item">
+            <div class="zoom2">
+                <img src="blog1.jpg" class="slideimg2" />
+            </div>
+
+            <a class="product-info2" href="#">
+                <div class="product-brand2"><b>Blog Title</b></div>
+                <div class="icongray">
+                    <i class="fa fa-user">&nbsp;By L3oN</i>
+
+                    <i class="fa fa-comment">&nbsp; / &nbsp; comment</i>
+                </div>
+                <div>
+                    <p class="textgray">
+                        Lorem ipsum dolor sit amet,consectetur<br />adipisicing elit. Id
+                        laboriosam ullam animi <br />
+                        pariatur dolor error fugit.
+                    </p>
+                </div>
+                <br
+                /></a>
+
+            <a class="readmore" href="#">
+                <div class="readmoretext">
+                    read more
+                    <i class="fa fa-angle-double-right"></i></div
+                ></a>
+
+
+        </div>
+        <div class="item">
+            <div class="zoom2">
+                <img src="blog2.jpg" class="slideimg2" />
+            </div>
+            <a class="product-info2" href="#">
+                <div class="product-brand2"><b>Blog Title</b></div>
+
+                <div class="icongray">
+                    <i class="fa fa-user">&nbsp;By L3oN</i>
+
+                    <i class="fa fa-comment">&nbsp; / &nbsp; comment</i>
+                </div>
+                <div class="textgray">
+                    <p>
+                        Lorem ipsum dolor sit amet,consectetur<br />
+                        adipisicing elit. Id laboriosam ullam animi<br />
+                        pariatur dolor error fugit.
+                    </p>
+                </div>
+                <br
+                /></a>
+
+            <a class="readmore" href="#">
+                <div class="readmoretext">
+                    read more
+                    <i class="fa fa-angle-double-right"></i></div
+                ></a>
+        </div>
+        <div class="item">
+            <div class="zoom2">
+                <img src="blog3.jpg" class="slideimg2" />
+            </div>
+            <a class="product-info2" href="#">
+                <div class="product-brand2"><b>Blog Title</b></div>
+                <div class="icongray">
+                    <i class="fa fa-user">&nbsp;By L3oN</i>
+
+                    <i class="fa fa-comment">&nbsp; / &nbsp; comment</i>
+                </div>
+                <div>
+                    <p class="textgray">
+                        Lorem ipsum dolor sit amet,consectetur<br />
+                        adipisicing elit. Id laboriosam ullam animi <br />
+                        pariatur dolor error fugit.
+                    </p>
+                </div>
+                <br
+                /></a>
+
+            <a class="readmore" href="#">
+                <div class="readmoretext">
+                    read more
+                    <i class="fa fa-angle-double-right"></i></div
+                ></a>
+        </div>
+        <div class="item">
+            <div class="zoom2">
+                <img src="blog4.jpg" class="slideimg2" />
+            </div>
+            <a class="product-info2" href="#">
+                <div class="product-brand2"><b>Blog Title</b></div>
+                <div class="icongray">
+                    <i class="fa fa-user">&nbsp;By L3oN</i>
+
+                    <i class="fa fa-comment">&nbsp; / &nbsp; comment</i>
+                </div>
+                <div>
+                    <p class="textgray">
+                        Lorem ipsum dolor sit amet,consectetur<br />
+                        adipisicing elit. Id laboriosam ullam animi<br />
+                        pariatur dolor error fugit.
+                    </p>
+                </div>
+                <br
+                /></a>
+            <a class="readmore" href="#">
+                <div class="readmoretext">
+                    read more
+                    <i class="fa fa-angle-double-right"></i></div
+                ></a>
+        </div>
+    </div>
+</div>
+<br />
+<!-- second URL background-->
+
+<div class="backgroundURL2">
+    <div class="special offer">
+        <h3><b>Special Offer</b></h3>
+        <h1 style="font-size: 50px;">Bags Sale Up To 50% off</h1>
+        <button type="button" class="btn5">SHOP NOW</button>
+    </div>
+    <br><br><br><br>
+</div>
+<br /><br /><br><br>
+<!-- Newletter signup-->
+
+<div class="container">
+    <div class="newletter">
+        <div class="col-md-12 col-sm-12 col-12">
+            <h2 style="text-align: center;" id="newsletter">Newsletter Signup</h2>
+            <hr width="7%" id="hrline3" />
+            <p style="text-align: center; color: #737373; font-size: 14px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                laboriosam ullam animi<br />
+                thid elipothionship hi est.
+            </p>
+            <br />
+            <span class="lastinput-button">
+            <input
+                    type="email"
+                    class="input1"
+                    placeholder=" &nbsp; Enter Your Email"
+            />
+            <button type="button" class="btn6">Subscribe</button>
+          </span>
+        </div>
+    </div>
+</div>
+<br /><br />
+<div class="container-fluid" id="blackbox">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-6 footer-menu">
+            <span class="footer">Comany Info</span><br>
+            <div class="sep-xs bg-light"></div>
+            <ul class="ulfooter">
+                <li>
+                    <a href="#"><b>About us</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Careers</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Find a Store</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Site Map</b></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 footer-menu">
+            <h5 class="footer">Help &Contact</h5>
+            <div class="sep-xs bg-light"></div>
+            <ul class="ulfooter">
+                <li>
+                    <a href="#"><b>Contact Us</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Order Status</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Shipping Info</b></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 footer-menu">
+            <h5 class="footer">Quick Links</h5>
+            <div class="sep-xs bg-light"></div>
+            <ul class="ulfooter">
+                <li>
+                    <a href="#"><b>Special Offers</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Gift Cards</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Blog</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Privacy Policy</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Terms of Use</b></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 footer-menu">
+            <h5 class="footer">Account</h5>
+            <div class="sep-xs bg-light"></div>
+            <ul class="ulfooter">
+                <li>
+                    <a href="#"><b>Apply Now</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Manage Account</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Affiliate</b></a>
+                </li>
+                <li>
+                    <a href="#"><b>Card Benefits</b></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 col-12"></div>
+        <div class="col-md-4 col-sm-12 col-12">
+            <ul class="footer2">
+                <li>
+                    <i class="fa fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fa fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fa fa-youtube-play"></i>
+                </li>
+                <li>
+                    <i class="fa fa-pinterest"></i>
+                </li>
+            </ul>
+            <p style="color: #757575; text-align: center; margin-right: 60px;">
+                @2020 by Mona
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-12"></div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- jquery-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--end-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.owl-carousel').slick({
+
+                dots: true,
+
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                loop:true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+
+
+        $(document).ready(function() {
+            $('.responsive').slick({
+
+                dots: true,
+
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                loop:true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+
+
+
+
+
+
+
+
+        const $dropdown = $(".dropdown");
+    const $dropdownToggle = $(".dropdown-toggle");
+    const $dropdownMenu = $(".dropdown-menu");
+    const showClass = "show";
+    $(window).on("load resize", function () {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+            $dropdown.hover(
+                function () {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function () {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
+            );
+        } else {
+            $dropdown.off("mouseenter mouseleave");
+        }
+    });
+
+
+
+
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    /* Get element */
+    var slidery = document.getElementsByClassName("mySlides");
+    /* Do this every time window gets resized */
+    $(slidery).on("resize", function () {
+        /* If we are above mobile breakpoint unslick the slider */
+        if ($(slidery).width() >= 800) {
+            /* Do this only if slider is initialized */
+            if (slidery.hasClass("myslides")) {
+                slidery.slick("unslick");
+            }
+            return;
+        }
+    });
+
+  </script>
+
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
